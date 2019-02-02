@@ -1,0 +1,288 @@
+@import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Orbitron');
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+/* General stuff */
+html, body {
+	background:#000;
+	color: rgba(255, 255, 255, 0.75);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15pt;
+	font-weight: 100;
+	line-height: 1.75em;
+	float: left;
+	width: 100%;
+    height: 100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+#shutdown-message{
+	
+	width:100%;
+	text-align:center;
+	margin-top:20%;
+}
+
+#reload-message{
+	width:100%;
+	text-align:center;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
+.highcharts-point{
+	cursor:pointer;
+}
+
+.modal-body{
+	color:#666;
+}
+
+.highcharts-color-0 {
+  fill: rgb(66, 103, 178);
+  stroke: rgb(66, 103, 178);
+}
+
+.highcharts-point {
+	fill: #fff;
+	stroke: rgb(66, 103, 178);
+    stroke-width: 3px;
+
+}
+
+.col-xs-6{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.modal-title{
+	color:rgb(32, 118, 176);
+	text-transform:uppercase;	
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+
+	#left{
+		float:none;
+		width:100%;
+	}
+
+	#right{
+		float:none;
+		width:100%;
+	}
+	body{
+		position: static;
+		overflow: visible;
+	}
+
+}
+
+
+/* Widgets and Tiles */
+.tiles{
+	margin-top:40px;
+}
+
+.tiles .col-sm-2.col-xs-4{
+    padding:2px;
+}
+
+.tiles .col-sm-4.col-xs-8{
+    padding:2px;
+}
+
+.widget{
+
+
+}
+
+h1 i{
+	padding-left:10px;
+}
+
+.tile{
+	background-color:#326da7;
+	height:30%;
+	min-height:230px;
+	max-height:230px;	
+	margin-bottom:5px;
+	margin-top:5px;
+
+}
+
+
+.widget h1{
+	text-transform:uppercase;
+	margin-top:0px;
+	margin-bottom:20px;
+}
+
+.widget-value{
+	font-weight:300;
+	font-family: 'Orbitron', sans-serif;
+	text-transform: capitalize;
+	transition: all 0.5s ease;
+}
+
+/* Small Widgets */
+.widget-small h1{
+	font-size:1.4em;
+	padding-top:30px;
+	margin-bottom:40px;
+}
+
+
+
+.widget-small .widget-value{
+	color:#fff;
+	font-size:1.6em;
+}
+
+.widget-small .widget-bg-icon{
+	position:absolute;
+	left:20%;
+	top:40px;
+    opacity: 0.06;
+    filter: alpha(opacity=6); /* For IE8 and earlier */	
+}
+
+.widget-small .widget-bg-icon i{
+	font-size:8.0em;
+	transition: all 0.5s ease;
+}
+
+/* Large Widgets */
+.widget{
+text-align:center;
+}
+
+.widget-large h1{
+	font-size:2.0em;
+	padding-top:30px;
+	margin-bottom:40px;
+}
+
+.widget-large .widget-bg-icon{
+	position:absolute;
+	left:30px;
+	top:40px;
+    opacity: 0.06;
+    filter: alpha(opacity=6); /* For IE8 and earlier */	
+}
+
+.widget-large .widget-bg-icon i{
+	font-size:8.0em;
+	transition: all 1.5s fade;
+}
+
+
+.widget-large .widget-value{
+	color:#fff;
+	font-size:1.6em;
+}
+
+/* Columns */
+#left{
+	float:left;
+	width:50%;
+}
+
+#right{
+	float:left;
+	width:50%;
+}
+
+
+/* Top bar */
+
+.topbar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 37px;
+	background-color: #000;
+	clear: both;
+	font-size: 1.5em;
+}
+
+.clock{
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+	padding-top: 1px;
+}
+
+.date{
+	float: left;
+	line-height: 1em;
+	margin: 8px 0 0 5px;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+.refresh{
+	width: 30px;
+	float: right;
+	line-height: 1em;
+	margin: 6px 13px 0 0;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+#weather_editoe{
+	text-align: center
+}
+
+#weather_editor .row{
+	height:200px !important;
+	text-align: center;
+	margin-bottom:20px;
+}
+
+#weather_editor .btn{
+	height:200px !important;
+	font-size:50px;
+}
+
+
+#weather_editor .btn-weather{
+	width:400px;
+	
+}
+
+#weather_editor i{
+	font-size:90px ;
+	margin-right:5px;
+}
+
+
+#weather_editor .btn-spinner-value{
+	font-size:30px;
+	display: inline-block;
+	min-width:500px;
+}
+
+
+#weather_editor .btn-spinner{
+	min-width:100px;
+}
+
+.highcharts-plot-line{
+	stroke:red !important;
+	stroke-width: 4px !important;
+}
